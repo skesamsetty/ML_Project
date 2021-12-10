@@ -299,9 +299,11 @@ CREATE TABLE Questionnaire
 
 SELECT * FROM Questionnaire;
 
+DROP TABLE QuestionsList;
+
 CREATE TABLE QuestionsList
 (
-	OuestionNum		VARCHAR,
+	QuestionNum		VARCHAR,
 	Question		VARCHAR
 );
 
