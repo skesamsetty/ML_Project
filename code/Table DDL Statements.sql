@@ -299,7 +299,7 @@ CREATE TABLE Questionnaire
 
 SELECT * FROM Questionnaire;
 
-DROP TABLE QuestionsList;
+-- DROP TABLE QuestionsList;
 
 CREATE TABLE QuestionsList
 (
