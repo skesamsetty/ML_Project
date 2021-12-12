@@ -1,5 +1,9 @@
-// Create a zip code object from the database containing all car makes and their
-// registered vehicle counts per zip code.  For later add to geoJSON properties
+// Create a questionnaire object from the database containing all survey data
 d3.json("/testconnect").then(function(testobject) {
   console.log(testobject);
+  d3.json("/questionnaire").then(function(questionnaireDF) {
+    console.log(questionnaireDF)
+
+    
+  });
 });
