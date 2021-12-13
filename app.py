@@ -37,17 +37,25 @@ def index():
 def detail(): 
     return render_template("index.html")
 
-@app.route("/testconnect")
-def testconnect():
-    df_testconnect = pd.read_sql_table(table_name="questionslist", con = engine.connect(), schema ="public")
-    df_testconnect_json = df_testconnect.to_dict(orient="records")
-    return jsonify(df_testconnect_json)
+@app.route("/questionslist")
+def questionslist():
+    df_questionslist = pd.read_sql_table(table_name="questionslist", con = engine.connect(), schema ="public")
+    df_questionslist_json = df_questionslist.to_dict(orient="records")
+    return jsonify(df_questionslist_json)
 
 @app.route("/questionnaire")
 def questionnaire():
     df_questionnaire = pd.read_sql_table(table_name="questionnaire", con = engine.connect(), schema ="public")
     df_questionnaire_json = df_questionnaire.to_dict(orient="records")
     return jsonify(df_questionnaire_json)
+
+@app.route("/demographics1")
+def demographics1(): 
+    return render_template("demographics1.html")
+
+@app.route("/demographics2")
+def demographics2(): 
+    return render_template("demographics2.html")
 
 if __name__ == "__main__":
     app.run()
