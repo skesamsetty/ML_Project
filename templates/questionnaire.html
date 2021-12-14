@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Introvert-Extravert Predictor</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css" />
+
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Introvert - Extrovert Questionnaire</h1>
+          <p>Answer all of the following questions, hit submit to receive prediction.</p>
+          <p>Enter a number from 1 (strongly disagree) to 5 (strongly agree):</p>
+          <form id="survey-form">
+            <div id="questions">
+              <label for="Q1A">Text for question 1:</label>
+              <p>
+                <input type="radio" id="Q1A1" name="Q1A" value="1"> Strongly disagree <br>
+                <input type="radio" id="Q1A2" name="Q1A" value="2"> Slightly disagree <br>
+                <input type="radio" id="Q1A3" name="Q1A" value="3"> Neutral <br>
+                <input type="radio" id="Q1A4" name="Q1A" value="4"> Slightly agree <br>
+                <input type="radio" id="Q1A5" name="Q1A" value="5"> Strongly agree <br>
+              </p>
+              <label for="Q2A">Text for question 2:</label>
+              <p>
+                <input type="radio" id="Q2A1" name="Q2A" value="1"> Strongly disagree <br>
+                <input type="radio" id="Q2A2" name="Q2A" value="2"> Slightly disagree <br>
+                <input type="radio" id="Q2A3" name="Q2A" value="3"> Neutral <br>
+                <input type="radio" id="Q2A4" name="Q2A" value="4"> Slightly agree <br>
+                <input type="radio" id="Q2A5" name="Q2A" value="5"> Strongly agree <br>
+              </p>
+            </div>
+            <div id="submitbutton">
+              <button type="submit" id="submit">Submit Questionnaire</button>
+            </div>
+            <div id="autoquestions" class="autogenquestions"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript files -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script>
+
+  </body>
+</html>

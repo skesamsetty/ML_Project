@@ -1,5 +1,37 @@
-// Create a zip code object from the database containing all car makes and their
-// registered vehicle counts per zip code.  For later add to geoJSON properties
-d3.json("/testconnect").then(function(testobject) {
-  console.log(testobject);
-});
+// main function to initialize the questionnaire
+function init() {
+
+  // Define object that will use d3 to get questions list from
+  //   questionslist table in AWS database
+  const allQuestions = d3.json("/questionslistDB");
+
+  // (If needed) define object that will use d3 to get responses from
+  //  questionnaire table in AWS database
+  // const allResponses = d3.json("/questionnaireDB");
+
+  // Query the db and put questions list into myData
+  allQuestions.then(function(myData) {
+    // console.log(myData);
+
+    // Iterate through the myData object and parse out each question number and text
+    var qdict = {};
+    var qform = d3.select(".autogenquestions");
+    for (let i = 0; i < myData.length; i++) {
+      questionText = Object.values(myData[i])[0];
+      questionNum = Object.values(myData[i])[1];
+      // console.log(`${questionNum} : ${questionText} : index ${i}`);
+
+      // Append them into an array/list for use in drawing the page with d3?
+      qdict[questionNum] = questionText;
+
+      qform.append("h5").text(`${questionNum}: ${questionText}`);
+    };
+    // console.log(qdict);
+    
+    
+  });
+};
+
+
+// Call the initialize function (the last line in this code)
+init();
