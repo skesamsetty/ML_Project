@@ -27,39 +27,39 @@ function init() {
                             .attr("id", `${questionNum}P`)
                           .append("input")
                             .attr("type", "radio")
-                            .attr("id", `${questionNum}A`)
+                            .attr("id", `${questionNum}A1`)
                             .attr("name", `${questionNum}A`)
                             .attr("value", "1")
-                            .text(" Disagree")
-                          .append("br");
+                            .text(" Disagree");
       d3.select(`#${questionNum}P`).append("input")
                                      .attr("type", "radio")
-                                     .attr("id", `${questionNum}A`)
+                                     .attr("id", `${questionNum}A2`)
                                      .attr("name", `${questionNum}A`)
                                      .attr("value", "2")
-                                     .text(" Slightly disagree")
-                                   .append("br");
+                                     .text(" Slightly disagree");
+                                  //  .append("br");
       d3.select(`#${questionNum}P`).append("input")
                                      .attr("type", "radio")
-                                     .attr("id", `${questionNum}A`)
+                                     .attr("id", `${questionNum}A3`)
                                      .attr("name", `${questionNum}A`)
                                      .attr("value", "3")
-                                     .text(" Neutral")
-                                   .append("br");
+                                     .attr("checked", "")
+                                     .text(" Neutral");
+                                  //  .append("br");
       d3.select(`#${questionNum}P`).append("input")
                                      .attr("type", "radio")
-                                     .attr("id", `${questionNum}A`)
+                                     .attr("id", `${questionNum}A4`)
                                      .attr("name", `${questionNum}A`)
                                      .attr("value", "4")
-                                     .text(" Slightly agree")
-                                   .append("br");
+                                     .text(" Slightly agree");
+                                  //  .append("br");
       d3.select(`#${questionNum}P`).append("input")
                                      .attr("type", "radio")
-                                     .attr("id", `${questionNum}A`)
+                                     .attr("id", `${questionNum}A5`)
                                      .attr("name", `${questionNum}A`)
                                      .attr("value", "5")
-                                     .text(" Agree")
-                                   .append("br");
+                                     .text(" Agree");
+                                  //  .append("br");
       
     }; // End for loop
 
@@ -74,7 +74,7 @@ function init() {
                           .text("Submit Questionnaire");
     
   }); // end of d3.json()
-  
+
 }; // end of function init()
 
 // Call the initialize function (the last line in this code)
