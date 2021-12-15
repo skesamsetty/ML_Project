@@ -15,13 +15,13 @@ app = Flask(__name__)
 
 from sqlalchemy import create_engine
 # Method 1: Use local config.py
-from config import username, password, host, port, database
-# # Method 2: (for Heroku) Get DB configuration variables from local OS
-# username = os.environ.get('DBUSERNAME')
-# password = os.environ.get('DBPASSWORD')
-# host = os.environ.get('DBHOST')
-# port = os.environ.get('DBPORT')
-# database = os.environ.get('DBDATABASE')
+# from config import username, password, host, port, database
+# Method 2: (for Heroku) Get DB configuration variables from local OS
+username = os.environ.get('DBUSERNAME')
+password = os.environ.get('DBPASSWORD')
+host = os.environ.get('DBHOST')
+port = os.environ.get('DBPORT')
+database = os.environ.get('DBDATABASE')
 connection_string = f'{username}:{password}@{host}:{port}/{database}'
 engine = create_engine(f'postgresql://{connection_string}')
 
