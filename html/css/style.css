@@ -1,0 +1,58 @@
+        body {
+            background: #333;
+            color: #fff;
+        }
+        
+        .navbar {
+            border-bottom: #008ed6 5px solid;
+            opacity: 0.8;
+        }
+        
+        #home-section {
+            background: url(../img/depan.jpg)center no-repeat;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            min-height: 2000px;
+        }
+        
+        #home-section .home-inner {
+            padding-top: 500px;
+        }
+        
+        #home-section .card-form {
+            opacity: 0.8;
+        }
+        
+        #home-section .fas,
+        #home-section .fab {
+            font-size: 30px;
+            color: #008ed6;
+        }
+        
+        #visualizations-head-section {
+            padding: .6in;
+            background: #008ed6;
+            color: #fff;
+        }
+        
+        #visualizations-section {
+            padding: .5in;
+            background: #008ed6;
+            color: #fff;
+        }
+        
+        #analytics-section .fas {
+            color: #0e4663;
+            background: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        #explore-section .fas,
+        #share-section .fas {
+            background: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+        }
