@@ -3,6 +3,7 @@ import pandas as pd
 import json 
 import psycopg2
 import os
+import numpy as np
 import pickle
 
 #################################################
@@ -63,25 +64,27 @@ def questionnaireHTML():
 @app.route("/send", methods=["GET", "POST"])
 def send():
     if request.method == "POST":
-        # Ensure the form values are accessible, get size of form
-        print("Request.form for Q1A is '", request.form["Q1A"], "' value")
-        print("Request.form by itself is ", request.form)
-        print("Size of the dictionary: ", len(request.form))
-        # get the response into a dataframe
-        for i in request.form:
-            print("i is ", i, "and value is ", request.form[i])
+        # print("Request.form is ", request.form)
+        # print("Size of the dictionary: ", len(request.form))
+        # for i in request.form:
+        #     print("i is ", i, "and value is ", request.form[i])
+
+        # get the response into a dataframe (1 x 91)
+        X_test = pd.DataFrame.from_dict(request.form, orient="index").T
+        print(X_test)
         # unpickle the model file
         localparent = '/Users/henrytirado/git/usc_homework/ML_Project'
         herokuparent = '/app'
         modelfile = localparent + '/saved_models/IE_Predictor_model.sav'
         # modelfile = herokuparent + '/saved_models/IE_Predictor_model.sav'
         loaded_model = pickle.load(open(modelfile, 'rb'))
-        # response_dict = {}
-        # response_df = pd.DataFrame[response_dict, columns=response_dict[]]
-        # response_df.size(-1, 1)
-        # size the dataframe appropriately
+        r = np.array([3])
+        y_test = pd.Series(r, copy=False)
+        prediction = loaded_model.score(X_test, y_test)
+        print("prediction is ", prediction)
         # Run a predict with the model
         # prediction = loaded_model.predict(X_test)[0]
+        # prediction = loaded_model.predict(X_test)
         # Return the output of what we think you are
         # return prediction
 
