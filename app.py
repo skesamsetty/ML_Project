@@ -16,9 +16,9 @@ app = Flask(__name__)
 #################################################
 
 from sqlalchemy import create_engine
-# Method 1: Use local config.py
+## Method 1: Use local config.py
 # from config import username, password, host, port, database
-# Method 2: (for Heroku) Get DB configuration variables from local OS
+## Method 2: (for Heroku) Get DB configuration variables from local OS
 username = os.environ.get('DBUSERNAME')
 password = os.environ.get('DBPASSWORD')
 host = os.environ.get('DBHOST')
@@ -55,7 +55,7 @@ def questionnaireDB():
     df_questionnaire_json = df_questionnaire.to_dict(orient="records")
     return jsonify(df_questionnaire_json)
 
-# HTML page displaying questionnaire for new user
+# HTML page displaying questionnaire for interactive user
 @app.route("/questionnaireHTML")
 def questionnaireHTML(): 
     return render_template("questionnaire.html")
@@ -64,42 +64,40 @@ def questionnaireHTML():
 @app.route("/send", methods=["GET", "POST"])
 def send():
     if request.method == "POST":
-        # print("Request.form is ", request.form)
-        # print("Size of the dictionary: ", len(request.form))
+        # print("Request.form: ", request.form)
+        # print("Size: ", len(request.form))
         # for i in request.form:
         #     print("i is ", i, "and value is ", request.form[i])
 
-        # get the response into a dataframe (1 x 91)
+        # get the response into a dataframe (1 x 91), then transpose the frame
         X_test = pd.DataFrame.from_dict(request.form, orient="index").T
         print(X_test)
-        # unpickle the model file
+
+        # define the possible path locations of the model file
         localparent = '/Users/henrytirado/git/usc_homework/ML_Project'
         herokuparent = '/app'
+        ## FOR DEPLOYMENT: uncomment only the correct model file location
         modelfile = localparent + '/saved_models/IE_Predictor_model.sav'
         # modelfile = herokuparent + '/saved_models/IE_Predictor_model.sav'
+
+        # Unpickle the model file
         loaded_model = pickle.load(open(modelfile, 'rb'))
+
+        ## This is a scoring exercise to validate that the model is responding
         r = np.array([3])
         y_test = pd.Series(r, copy=False)
-        prediction = loaded_model.score(X_test, y_test)
-        print("prediction is ", prediction)
-        # Run a predict with the model
-        # prediction = loaded_model.predict(X_test)[0]
-        # prediction = loaded_model.predict(X_test)
+        score = loaded_model.score(X_test, y_test)
+        print("Score test is (1 = introvert, 2 = extrovert, 3 = ambivert): ", score)
+
+        # Predict outcome based on user entered data
+        prediction = loaded_model.predict(X_test)[0]
+        print("Prediction with current X_test: ", prediction)
+
         # Return the output of what we think you are
         # return prediction
 
     return render_template("questionnaire.html")
 
-
-# HTML page displaying Tableau demographics dashboard
-@app.route("/demographics1")
-def demographics1(): 
-    return render_template("demographics1.html")
-
-# Alternate HTML page displaying Tableau demographics work sheets
-@app.route("/demographics2")
-def demographics2(): 
-    return render_template("demographics2.html")
 
 if __name__ == "__main__":
     app.run()
