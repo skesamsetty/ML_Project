@@ -37,7 +37,7 @@ def index():
 
 @app.route("/")
 def detail(): 
-    return render_template("index.html")
+    return render_template("questionnaire.html")
 
 # Querying the DB for questionslist questions
 @app.route("/questionslistDB")
@@ -57,6 +57,13 @@ def questionnaireDB():
 @app.route("/questionnaireHTML")
 def questionnaireHTML(): 
     return render_template("questionnaire.html")
+
+# Handler for questionnaire submission
+# @app.route("/send", methods=["GET", "POST"])
+# def send():
+
+#     if request.method == "POST":
+
 
 # HTML page displaying Tableau demographics dashboard
 @app.route("/demographics1")
