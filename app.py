@@ -77,8 +77,8 @@ def send():
         localparent = '/Users/henrytirado/git/usc_homework/ML_Project'
         herokuparent = '/app'
         ## FOR DEPLOYMENT: uncomment only the correct model file location
-        modelfile = localparent + '/saved_models/IE_Predictor_model.sav'
-        # modelfile = herokuparent + '/saved_models/IE_Predictor_model.sav'
+        # modelfile = localparent + '/saved_models/IE_Predictor_model.sav'
+        modelfile = herokuparent + '/saved_models/IE_Predictor_model.sav'
 
         # Unpickle the model file
         loaded_model = pickle.load(open(modelfile, 'rb'))
@@ -90,11 +90,19 @@ def send():
         print("Score test is (1 = introvert, 2 = extrovert, 3 = ambivert): ", score)
 
         # Predict outcome based on user entered data
-        prediction = loaded_model.predict(X_test)[0]
-        print("Prediction with current X_test: ", prediction)
+        predict_number = loaded_model.predict(X_test)[0]
+        if predict_number == 1:
+            ieprediction = "INTROVERT"
+        elif predict_number == 2:
+            ieprediction = "EXTROVERT"
+        elif predict_number == 3:
+            ieprediction = "AMBIVERT"
+        else:
+            ieprediction = "UNKNOWN"
+        print("Prediction with current X_test: ", ieprediction)
 
         # Return the output of what we think you are
-        return f"<p>Your prediction was {prediction}</>"
+        return render_template("result.html", prediction=ieprediction)
 
     return render_template("questionnaire.html")
 
