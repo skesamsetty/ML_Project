@@ -68,6 +68,8 @@ Application expects DB configuration to fetch the survey data.
 
 Tableau
 
+![alt text](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
+
 ---
 ## **Machine Learning Algorithm Performance**:
 ---
