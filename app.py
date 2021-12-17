@@ -94,7 +94,7 @@ def send():
         print("Prediction with current X_test: ", prediction)
 
         # Return the output of what we think you are
-        # return prediction
+        return f"<p>Your prediction was {prediction}</>"
 
     return render_template("questionnaire.html")
 
