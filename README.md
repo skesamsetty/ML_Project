@@ -68,15 +68,14 @@ Application expects DB configuration to fetch the survey data.
 
 Tableau
 
-![alt text](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
+![tableau demographics](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
 
-![alt text](https://public.tableau.com/app/profile/henry.o.tirado/viz/IEPredictionAnalysis/ParticipantDemographics)
 
 ---
 ## **Machine Learning Algorithm Performance**:
 ---
-![alt text](https://github.com/scottdseely/ML_Project/blob/main/images/ConfMatrix-Introvert-Extrovert-Ambivert_.png)
+![Conf Matrix](https://github.com/scottdseely/ML_Project/blob/main/images/ConfMatrix-Introvert-Extrovert-Ambivert_.png)
 
 
-![alt text](https://github.com/scottdseely/ML_Project/blob/main/images/Elbow-plot-k-Means-Cluster_.png)
+![Elbow Plot](https://github.com/scottdseely/ML_Project/blob/main/images/Elbow-plot-k-Means-Cluster_.png)
 
