@@ -70,6 +70,8 @@ Tableau
 
 ![alt text](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
 
+![alt text](https://public.tableau.com/app/profile/henry.o.tirado/viz/IEPredictionAnalysis/ParticipantDemographics)
+
 ---
 ## **Machine Learning Algorithm Performance**:
 ---
