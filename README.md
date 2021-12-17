@@ -73,3 +73,8 @@ Tableau
 ---
 ## **Machine Learning Algorithm Performance**:
 ---
+![alt text](https://github.com/scottdseely/ML_Project/blob/main/images/ConfMatrix-Introvert-Extrovert-Ambivert_.png)
+
+
+![alt text](https://github.com/scottdseely/ML_Project/blob/main/images/Elbow-plot-k-Means-Cluster_.png)
+
