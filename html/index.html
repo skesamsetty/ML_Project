@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nomads Inc.</title>
+</head>
+
+<body data-spy="scroll" data-target="#main-nav" id="home">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top" id="main-nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Nomads Inc.</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#visualizations-head-section" class="nav-link">Visualizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#analytics-head-section" class="nav-link">ML Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team-head-section" class="nav-link">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <header id="home-section">
+        <div class="d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                </div>
+            </div>
+        </div>
+        <div class="dark-overlay">
+            <div class="home-inner container">
+                <div class="row">
+                    <div class="col-lg-8 d-none d-lg-block">
+                    </div>
+                </div>
+    </header>
+
+    <!-- VISUALIZATIONS HEAD -->
+    <section id="visualizations-head-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 d-none d-xl-block">
+                    <div class='tableauPlaceholder' id='viz1639542169516' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;AgeDistribution' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+                    <script type='text/javascript'>
+                        var divElement = document.getElementById('viz1639542169516');
+                        var vizElement = divElement.getElementsByTagName('object')[0];
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                        var scriptElement = document.createElement('script');
+                        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    </script>
+                </div>
+
+                <!-- <div class="container">
+            <div class="row">
+                <div class="col-xl-12 d-none d-xl-block">
+                </div>
+                <div class='tableauPlaceholder' id='viz1639436864231' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;ParticipantDemographics' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1639436864231');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.minWidth = '420px';
+                        vizElement.style.maxWidth = '800px';
+                        vizElement.style.width = '100%';
+                        vizElement.style.minHeight = '587px';
+                        vizElement.style.maxHeight = '687px';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.minWidth = '420px';
+                        vizElement.style.maxWidth = '800px';
+                        vizElement.style.width = '100%';
+                        vizElement.style.minHeight = '587px';
+                        vizElement.style.maxHeight = '687px';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '1327px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+                <div id="map"></div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+                <!-- JavaScript files -->
+                <script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script>
+
+            </div>
+        </div>
+        </div> -->
+    </section>
+
+    <!-- VISUALIZATIONS SECTION -->
+    <!-- <section id="visualizations-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 d-none d-xl-block">
+                </div>
+                <div class='tableauPlaceholder' id='viz1639436864231' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;ParticipantDemographics' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1639436864231');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if (divElement.offsetWidth > 800) {
+                        vizElement.style.minWidth = '420px';
+                        vizElement.style.maxWidth = '800px';
+                        vizElement.style.width = '100%';
+                        vizElement.style.minHeight = '587px';
+                        vizElement.style.maxHeight = '687px';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else if (divElement.offsetWidth > 500) {
+                        vizElement.style.minWidth = '420px';
+                        vizElement.style.maxWidth = '800px';
+                        vizElement.style.width = '100%';
+                        vizElement.style.minHeight = '587px';
+                        vizElement.style.maxHeight = '687px';
+                        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    } else {
+                        vizElement.style.width = '100%';
+                        vizElement.style.height = '1327px';
+                    }
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+                <div id="map"></div>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+                <!-- JavaScript files -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script>
+
+    </div>
+    </div>
+    </div>
+    </section> -->
+
+    <!-- analytics HEAD -->
+    <section id="analytics-head-section" class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class='tableauPlaceholder' id='viz1639542169516' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;AgeDistribution' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1639542169516');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+                <div class='tableauPlaceholder' id='viz1639542169516' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;AgeDistribution' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1639542169516');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+                <h1 class="display-4"></h1>
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente doloribus ut iure itaque quibusdam rem accusantium deserunt reprehenderit sunt minus.</p>
+
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- analytics SECTION -->
+    <section id="analytics-section" class="py-xl-5">
+        <div class="container">
+            <h1>Age Distribution</h1>
+            <div class='tableauPlaceholder' id='viz1639436158618' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;AgeDistribution' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1639436158618');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <h1>Gender Distribution</h1>
+            <div class='tableauPlaceholder' id='viz1639436246205' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;GenderDistribution' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1639436246205');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <h1>Overall Distribution</h1>
+            <div class='tableauPlaceholder' id='viz1639436282155' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;OverallDistribution' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1639436282155');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+            <h2>Countries List</h2>
+            <div class='tableauPlaceholder' id='viz1639436308549' style='position: relative'><object class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='IEPredictionAnalysis&#47;CountriesList' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1639436308549');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width = '100%';
+                vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+            <!-- JavaScript files -->
+            <!-- <script type="text/javascript" src="{{ url_for('static', filename='js/logic.js') }}"></script> -->
+
+
+            <div class="row">
+                <div class="col-md-6 order-2">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- TEAM HEAD -->
+    <section id="team-head-section" class="bg-primary">
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team-section" class="bg-light text-muted py-5">
+        <div class="d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="team" class="card">
+                            <h3 class="card-title"><strong>Nomads Inc.  -  The Team</strong></h3>
+                            <hr>
+                            <ul>
+                                <br>
+                                <img src="../img/Henry.jpg" width=150 height=150 alt="Henry">
+                                <h4>Henry Tirado</h4>
+                                <a href="https://github.com/githotirado" target="_blank"><img src="../img/github.png" width=40 height=40 /></a>
+                                <a href="https://www.linkedin.com/in/henry-tirado" target="_blank"><img src="../img/linkedin.png" width=40 height=40 /></a>
+                                <hr>
+                            </ul>
+                            <ul>
+                                <h4>
+
+                                </h4>
+                            </ul>
+                            <ul>
+                                <br>
+                                <img src="../img/Sushma.jpg" width=150 height=150 alt="Sushma">
+                                <h4>Sushma Kesamsetty</h4>
+                                <a href="https://github.com/skesamsetty" target="_blank"><img src="../img/github.png" width=40 height=40 /></a>
+                                <a href="https://www.linkedin.com/in/sushma-kesamsetty/" target="_blank"><img src="../img/linkedin.png" width=40 height=40 /></a>
+                                <hr>
+                            </ul>
+                            <ul>
+                                <h4>
+
+                                </h4>
+                            </ul>
+                            <ul>
+                                <br>
+                                <img src="../img/Scott.jpg" width=150 height=150 alt="Scott">
+                                <h4>Scott Seely</h4>
+                                <a href="https://github.com/scottdseely" target="_blank"><img src="../img/github.png" width=40 height=40 /></a>
+                                <a href="https://www.linkedin.com/in/scott-seely-b031004/" target="_blank"><img src="../img/linkedin.png" width=40 height=40 /></a>
+                                <hr>
+                            </ul>
+                            <ul>
+                                <h4>
+
+                                </h4>
+                            </ul>
+                            <br>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <br>
+            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <h3>Nomads Inc.</h3>
+                    <p>Copyright &copy;
+                        <span id="year"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    </div>
+    </div>
+    </div>
+
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+
+        // Init Scrollspy
+        $('body').scrollspy({
+            target: '#main-nav'
+        });
+
+        // Smooth Scrolling
+        $("#main-nav a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+
+                    window.location.hash = hash;
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
