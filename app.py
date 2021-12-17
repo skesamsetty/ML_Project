@@ -3,6 +3,7 @@ import pandas as pd
 import json 
 import psycopg2
 import os
+import pickle
 
 #################################################
 # Flask Setup
@@ -62,19 +63,27 @@ def questionnaireHTML():
 @app.route("/send", methods=["GET", "POST"])
 def send():
     if request.method == "POST":
+        # Ensure the form values are accessible, get size of form
         print("Request.form for Q1A is '", request.form["Q1A"], "' value")
         print("Request.form by itself is ", request.form)
         print("Size of the dictionary: ", len(request.form))
-        # unpickle the model file
         # get the response into a dataframe
+        for i in request.form:
+            print("i is ", i, "and value is ", request.form[i])
+        # unpickle the model file
+        localparent = '/Users/henrytirado/git/usc_homework/ML_Project'
+        herokuparent = '/app'
+        modelfile = localparent + '/saved_models/IE_Predictor_model.sav'
+        # modelfile = herokuparent + '/saved_models/IE_Predictor_model.sav'
+        loaded_model = pickle.load(open(modelfile, 'rb'))
         # response_dict = {}
-        # response_dict["Q1A"] = request.form["Q1A"]
         # response_df = pd.DataFrame[response_dict, columns=response_dict[]]
         # response_df.size(-1, 1)
         # size the dataframe appropriately
         # Run a predict with the model
+        # prediction = loaded_model.predict(X_test)[0]
         # Return the output of what we think you are
-        # return response_df
+        # return prediction
 
     return render_template("questionnaire.html")
 
