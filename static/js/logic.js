@@ -51,6 +51,7 @@ function init() {
                              .attr("for", `${questionNum}A${j}`)
                              .text(inputText);
         d3.select(".qform").append("br");
+        if (j == 3) d3.select(`#${questionNum}A${j}`).attr("checked", "");
       }
       // d3.select(".qform").append("input")
       //                       .attr("type", "radio")
