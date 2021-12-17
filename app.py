@@ -61,8 +61,9 @@ def questionnaireHTML():
 # Handler for questionnaire submission
 # @app.route("/send", methods=["GET", "POST"])
 # def send():
-
 #     if request.method == "POST":
+#         form_responses = request.form["questionnaireform"] # object with answers
+#         return form_responses
 
 
 # HTML page displaying Tableau demographics dashboard
