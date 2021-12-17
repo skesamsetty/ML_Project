@@ -9,64 +9,68 @@ function init() {
   allQuestions.then(function(myData) {
     // console.log(myData);
     // Iterate through the myData object and parse out each question number and text
-    var qdict = {};
-    var qform = d3.select(".survey");
+    // var qdict = {};
+    // var qform = d3.select(".qform");
     for (let i = 0; i < myData.length; i++) {
       questionText = Object.values(myData[i])[0];
       questionNum = Object.values(myData[i])[1];
       // console.log(`${questionNum} : ${questionText} : index ${i}`);
 
       // Append both values as key:value into dictionary qdict
-      qdict[questionNum] = questionText;
+      // qdict[questionNum] = questionText;
       
       // Add line into HTML for the question
-      d3.select(".survey").append("label")
+      d3.select(".qform").append("br");
+      d3.select(".qform").append("label")
                             .attr("for", `${questionNum}A`)
                             .text(`${questionNum}: ${questionText}`);
-      d3.select(".survey").append("p")
-                            .attr("id", `${questionNum}P`)
-                          .append("input")
+      d3.select(".qform").append("p")
+      //                       .attr("id", `${questionNum}P`);
+      // d3.select(`#${questionNum}P`).append("input")
+      d3.select(".qform").append("input")
                             .attr("type", "radio")
                             .attr("id", `${questionNum}A1`)
                             .attr("name", `${questionNum}A`)
                             .attr("value", "1")
-                            .text(" Disagree");
-      d3.select(`#${questionNum}P`).append("input")
+                            .text(" Disagree")
+                         .append("br");
+      // d3.select(`#${questionNum}P`).append("input")
+      d3.select(".qform").append("input")
                                      .attr("type", "radio")
                                      .attr("id", `${questionNum}A2`)
                                      .attr("name", `${questionNum}A`)
                                      .attr("value", "2")
-                                     .text(" Slightly disagree");
-                                  //  .append("br");
-      d3.select(`#${questionNum}P`).append("input")
+                                     .text(" Slightly disagree")
+                                   .append("br");
+      d3.select(".qform").append("input")
                                      .attr("type", "radio")
                                      .attr("id", `${questionNum}A3`)
                                      .attr("name", `${questionNum}A`)
                                      .attr("value", "3")
                                      .attr("checked", "")
-                                     .text(" Neutral");
-                                  //  .append("br");
-      d3.select(`#${questionNum}P`).append("input")
+                                     .text(" Neutral")
+                                   .append("br");
+      d3.select(".qform").append("input")
                                      .attr("type", "radio")
                                      .attr("id", `${questionNum}A4`)
                                      .attr("name", `${questionNum}A`)
                                      .attr("value", "4")
-                                     .text(" Slightly agree");
-                                  //  .append("br");
-      d3.select(`#${questionNum}P`).append("input")
+                                     .text(" Slightly agree")
+                                   .append("br");
+      d3.select(".qform").append("input")
                                      .attr("type", "radio")
                                      .attr("id", `${questionNum}A5`)
                                      .attr("name", `${questionNum}A`)
                                      .attr("value", "5")
-                                     .text(" Agree");
-                                  //  .append("br");
+                                     .text(" Agree")
+                                   .append("br");
       
     }; // End for loop
 
     // console.log(qdict);
 
     // Add survey submission button at end of survey
-    d3.select(".survey").append("div")
+    d3.select(".qform").append("div")
                           .attr("id", "submitbutton")
                         .append("button")
                           .attr("type", "submit")
