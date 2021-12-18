@@ -33,7 +33,7 @@ Personality data has many commercial uses.
 ## **Configuration Requirements**:
 ---
 
-Application expects DB configuration to fetch the survey data.
+When training and testing the model in the Jupyter notebook, it expects DB configuration to fetch the survey data.
 
     Create a file "config.py" in the folder "code". Add and fill Username, Password, Host and Port in the file.
       driver='postgresql'
@@ -44,7 +44,7 @@ Application expects DB configuration to fetch the survey data.
       database="postgres" 
 
 ---        
-## **Library Requirements**:
+## **Library Requirements and Tools**:
 ---
 
 - AWS RDS
@@ -56,6 +56,7 @@ Application expects DB configuration to fetch the survey data.
 - Matplotlib
 - HTML/CSS
 - JavaScript
+- SQLAlchemy
 - D3
 - Flask
 - Tableau
@@ -66,7 +67,7 @@ Application expects DB configuration to fetch the survey data.
 ---
 - https://www.kaggle.com/yamqwe/introversionextraversion-scales
 
-The questionaire contains 91 questions. The questions were presented one at a time in a random order. For each questions 3 values were recorded:
+The questionaire contains 91 questions and 3 demographic identifiers. The questions were presented one at a time in a random order. For each questions 3 values were recorded:
 
 
 
@@ -119,8 +120,31 @@ Hence we sticked on to using Random Forest Classifier for our application.
 
 So, finally, the trained model is saved using Pickle.
 
-In our web application, Once the user completes the Survey questionnaire, our already trained model would be unpickled to make the personality trait predictions. 
+---
+### **Designing and Deploying the App**:
+---
+The web app is written using Python, HTML, and JavaScript mainly.  
 
+It uses D3 to read in the list of questions from our database and dynamically generate the HTML code for the questionnaire page.  
+
+Upon clicking the submit button, Flask and Python unpickle the trained model and save the responses in a Pandas 1x91 DataFrame.  The DataFrame is run through the model to let the model predict the user's personality trait.
+
+A results page displays the model's prediction in a Jumbotron element.
+
+---
+### **Visualizations**:
+---
+Participant demographic dashboards were produced in Tableau Public.
+
+---
+### **Observations**:
+---
+
+Interesting to note is that more introverts participated and gave the surveyors permission to use their responses in the research than the other two categories, despite extroverts outnumbering introverts by 3 to 1.
+
+The participants were mostly GenZ followed by Millenials, and more females participated than males.  The participant country counts demonstrated that we would not use this feature to train since population distribution was not accurately reflected.
+
+Some questions produced stronger responses than others for each trait. Introverts favor 1 on 1 interactions and spending time with their hobbies and prefer listening to people in conversations.  Extroverts admitted they love to laugh a lot, stand up for themselves, love excitement, and have strong personalities.  Ambiverts were neutral for most questions but were in strong agreement to loving excitement and laughing a lot.
 ****
 
 
