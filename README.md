@@ -56,9 +56,9 @@ Application expects DB configuration to fetch the survey data.
 - Flask
 - Matplotlib
 - Tableau
-- scikitlearn
+- Scikit Learn
 - Heroku
-- Jupyter
+- Jupyter Notebook
 
 ---
 ## **Data Source**: 
