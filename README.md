@@ -62,7 +62,7 @@ Application expects DB configuration to fetch the survey data.
 - https://www.kaggle.com/yamqwe/introversionextraversion-scales
 
 
-![questions](images/Questions_all.png")
+![questions](images/Questions_all.png)
 
 ---
 ## **Visualization**:
