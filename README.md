@@ -12,7 +12,7 @@ Project is to develop the machine learning application that would predict the pe
 
 ![Personality-Survey](html/img/depan.jpg)
 
-**_Introvert_**:  Introverts may prefer taking part in less stimulating activities and get pleasure from activities such as reading, writing, or meditating.  Introverts typically prefer to concentrate on a single activity, analyze situations carefully and take time to think more before they speak.
+**_Introvert_**:  Introverts may prefer taking part in less stimulating activities and get pleasure from activities such as reading, writing or meditating.  Introverts typically prefer to concentrate on a single activity, analyze situations carefully and take time to think more before they speak.
 
 **_Extrovert_**:  Extroverts usually prefer to seek out as much social interaction as possible because this is how they feel more energized. According to estimates, extroverts outnumber introverts by about three to one (Cain, 2012).
 
@@ -34,13 +34,13 @@ Personality data has many commercial uses.
 
 Application expects DB configuration to fetch the survey data.
 
-    1. config.py - with details like below. Provide Username, Password, Host and Port.
-            driver='postgresql'
-            username='<>'
-            password='<>'
-            host = "<>"
-            port = "<>"
-            database = "postgres" 
+    Create a file "config.py" in the folder "code". Add and fill Username, Password, Host and Port in the file.
+      driver='postgresql'
+      username=
+      password=
+      host= 
+      port= 
+      database="postgres" 
 
 ---        
 ## **Library Requirements**:
@@ -71,3 +71,9 @@ Tableau
 ---
 ## **Machine Learning Algorithm Performance**:
 ---
+
+Our machine learning model uses Random Forest classifier to make the predictions based on user responses to the 91 personality questions. Personality of a person can be 1:Introvert, 2:Extrovert or 3:Ambivert. 
+
+Accuracy of our predictions is approximately 72%.
+
+
