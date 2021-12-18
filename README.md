@@ -61,6 +61,14 @@ Application expects DB configuration to fetch the survey data.
 ---
 - https://www.kaggle.com/yamqwe/introversionextraversion-scales
 
+The questionaire contains 91 questions. The questions were presented one at a time in a random order. For each questions 3 values were recorded:
+
+
+
+A - The user's selected response. 1=Disagree, 2=Slightly disagree, 3=Neutral, 4=Slightly agree, 5=Agree
+I - The position of the question in the survey.
+E - The time elapsed on that question in milliseconds.
+
 
 ![questions](images/Questions_all.png")
 
@@ -80,4 +88,8 @@ Tableau
 
 
 ![Elbow Plot ](https://github.com/scottdseely/ML_Project/blob/main/images/Elbow-plot-k-Means-Cluster_.png)
+
+
+
+## **References**:
 
