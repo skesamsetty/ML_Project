@@ -1,4 +1,4 @@
-# **"ML Project" _by Nomads_**
+# **"Trait Predictor Project" _by Nomads_**
 
 
 ## **Founders:** Henry Tirado, Scott Seely, Sushma Kesamsetty
@@ -8,7 +8,7 @@
 ## **Objective**:
 ---
 
-Project is to develop the machine learning application that would predict the personality trait of a person as Introvert/Extrovert/Ambivert based on 91 personality questions. Our ML algorithm is trained based on survey with the same set of personality questions. 
+Our Project objective was to develop the machine learning application that would predict the personality trait of a person as Introvert/Extrovert/Ambivert based on 91 personality questions. Our ML algorithm is trained based on survey with the same set of personality questions. 
 
 ![Personality-Survey](html/img/depan.jpg)
 
@@ -62,11 +62,16 @@ Application expects DB configuration to fetch the survey data.
 - https://www.kaggle.com/yamqwe/introversionextraversion-scales
 
 
+![questions](images/Questions_all.png)
+
 ---
 ## **Visualization**:
 ---
 
 Tableau
+
+![tableau demographics](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
+
 
 ---
 ## **Machine Learning Algorithm Performance**:
@@ -80,3 +85,4 @@ Accuracy of our predictions is approximately 72%.
 
 
 ![Elbow Plot ](https://github.com/scottdseely/ML_Project/blob/main/images/Elbow-plot-k-Means-Cluster_.png)
+
