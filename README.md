@@ -62,6 +62,8 @@ Application expects DB configuration to fetch the survey data.
 - https://www.kaggle.com/yamqwe/introversionextraversion-scales
 
 
+![questions](images/Questions_all.png")
+
 ---
 ## **Visualization**:
 ---
@@ -77,5 +79,5 @@ Tableau
 ![Conf Matrix](https://github.com/scottdseely/ML_Project/blob/main/images/ConfMatrix-Introvert-Extrovert-Ambivert_.png)
 
 
-![Elbow Plot](https://github.com/scottdseely/ML_Project/blob/main/images/Elbow-plot-k-Means-Cluster_.png)
+![Elbow Plot ](https://github.com/scottdseely/ML_Project/blob/main/images/Elbow-plot-k-Means-Cluster_.png)
 
