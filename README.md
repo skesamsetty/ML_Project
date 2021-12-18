@@ -76,4 +76,7 @@ Our machine learning model uses Random Forest classifier to make the predictions
 
 Accuracy of our predictions is approximately 72%.
 
+![Conf Matrix](https://github.com/scottdseely/ML_Project/blob/main/images/ConfMatrix-Introvert-Extrovert-Ambivert_.png)
 
+
+![Elbow Plot ](https://github.com/scottdseely/ML_Project/blob/main/images/Elbow-plot-k-Means-Cluster_.png)
