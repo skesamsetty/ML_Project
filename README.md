@@ -51,15 +51,15 @@ Application expects DB configuration to fetch the survey data.
 - Postgresql
 - Python
 - Pandas
+- Jupyter Notebook
+- Scikit Learn
+- Matplotlib
 - HTML/CSS
 - JavaScript
 - D3
 - Flask
-- Matplotlib
 - Tableau
-- Scikit Learn
 - Heroku
-- Jupyter Notebook
 
 ---
 ## **Data Source**: 
