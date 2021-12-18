@@ -1,4 +1,4 @@
-# **"ML Project" _by Nomads_**
+# **"Trait Predictor Project" _by Nomads_**
 
 
 ## **Founders:** Henry Tirado, Scott Seely, Sushma Kesamsetty
