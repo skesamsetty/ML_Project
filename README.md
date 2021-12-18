@@ -46,15 +46,18 @@ Application expects DB configuration to fetch the survey data.
 ## **Library Requirements**:
 ---
 
-- AWS
+- AWS RDS
 - Postgresql
 - Python
 - Pandas
 - HTML/CSS
-- JS
+- JavaScript
 - D3
 - Flask
 - Matplotlib
+- Tableau
+- Scikit Learn
+- Jupyter Notebook
 
 ---
 ## **Data Source**: 
