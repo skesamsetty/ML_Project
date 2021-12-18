@@ -88,7 +88,7 @@ Tableau
 ---
 ## **Application Design**:
 ---
-![PredictorSays](https://user-images.githubusercontent.com/656837/146631316-01a3eccc-166f-420c-8e44-18dd7089fea2.png)
+![PredictorSays](https://user-images.githubusercontent.com/656837/146631316-01a3eccc-166f-420c-8e44-18dd7089fea2.png)(https://ie-predictor.herokuapp.com/)
 ---
 ### **Machine Learning**:
 ---
