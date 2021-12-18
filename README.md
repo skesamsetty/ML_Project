@@ -57,6 +57,7 @@ Application expects DB configuration to fetch the survey data.
 - Matplotlib
 - Tableau
 - Scikit Learn
+- Heroku
 - Jupyter Notebook
 
 ---
