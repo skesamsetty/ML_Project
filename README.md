@@ -76,9 +76,12 @@ Tableau
 
 ![tableau demographics](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
 
+---
+## **Application Design**:
+---
 
 ---
-## **Machine Learning Algorithm Performance**:
+### **Machine Learning**:
 ---
 
 Our machine learning model uses Random Forest classifier to make the predictions based on user responses to the 91 personality questions. Personality of a person can be 1:Introvert, 2:Extrovert or 3:Ambivert. 
