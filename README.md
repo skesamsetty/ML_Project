@@ -75,6 +75,9 @@ A - The user's selected response. 1=Disagree, 2=Slightly disagree, 3=Neutral, 4=
 I - The position of the question in the survey.
 E - The time elapsed on that question in milliseconds.
 
+![Survey](images/Questionnaire.png)
+
+<br><br>
 
 ![questions](images/Questions_all.png)
 
