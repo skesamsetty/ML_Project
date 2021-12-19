@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Templates 101</title>
+  <title>Introvert-Extrovert Predictor Results</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"/>
 
@@ -19,9 +19,9 @@
 <body>
   <div class="container">
 
-    <div class="jumbotron text-center">
+    <div predictor-status="{{prediction}}" class="jumbotron text-center">
       <!-- Render our data -->
-      <h1>Predictor says you are an {{ prediction }}</h1>
+      <h1>Predictor says you are an {{prediction}}</h1>
     </div>
 
   </div>

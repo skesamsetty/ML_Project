@@ -4,6 +4,22 @@ body {
   background-color: white;
 }
 
+.jumbotron[predictor-status="AMBIVERT"] {
+  background-color: #D7BE48;
+}
+
+.jumbotron[predictor-status="INTROVERT"] {
+  background-color: #2B62BA;
+}
+
+.jumbotron[predictor-status="EXTROVERT"] {
+  background-color: #DA665D;
+}
+
+.jumbotron[predictor-status="UNKNOWN"] {
+  background-color: fuchsia;
+}
+
 .map-region {
   /* background-color: yellow; */
   height: 800px;
