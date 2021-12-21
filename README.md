@@ -134,6 +134,7 @@ A results page displays the model's prediction in a Jumbotron element.
 ---
 
 Participant demographic dashboards were produced in Tableau Public.
+https://public.tableau.com/app/profile/henry.o.tirado/viz/IEPredictionAnalysis/ParticipantDemographics
 
 ![tableau demographics](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
 
