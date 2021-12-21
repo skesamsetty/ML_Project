@@ -29,19 +29,14 @@ function init() {
         else if (j == 4) inputText = "- Slightly agree"
         else inputText = "- Agree";
 
-        // d3.select(".qform").append("input")
-        // d3.select(".qform").append("div")
-        //                  .attr("class", `qseparator ${questionNum}A${j}`);
         d3.select(`.${questionNum}`).append("input")
                              .attr("type", "radio")
                              .attr("id", `${questionNum}A${j}`)
                              .attr("name", `${questionNum}A`)
                              .attr("value", j);
-        // d3.select(".qform").append("label")
         d3.select(`.${questionNum}`).append("label")
                              .attr("for", `${questionNum}A${j}`)
                              .text(inputText);
-        // d3.select(".qform").append("br");
 
         // Pre-selection criteria to use
         if (j == 3) d3.select(`#${questionNum}A${j}`).attr("checked", "");
