@@ -4,53 +4,50 @@ body {
   background-color: white;
 }
 
-.jumbotron[predictor-status="AMBIVERT"] {
+#qjumbo {
   background-color: #D7BE48;
 }
 
-.jumbotron[predictor-status="INTROVERT"] {
+#rjumbo[predictor-status="AMBIVERT"] {
+  background-color: #D7BE48;
+}
+
+#rjumbo[predictor-status="INTROVERT"] {
   background-color: #2B62BA;
 }
 
-.jumbotron[predictor-status="EXTROVERT"] {
+#rjumbo[predictor-status="EXTROVERT"] {
   background-color: #DA665D;
 }
 
-.jumbotron[predictor-status="UNKNOWN"] {
+#rjumbo[predictor-status="UNKNOWN"] {
   background-color: fuchsia;
 }
 
-.map-region {
-  /* background-color: yellow; */
-  height: 800px;
+input {
+  margin: 8px;
 }
 
-/* CSS from the leaflet-choropleth documentation */
-.legend {
-  color: #555;
-  padding: 6px 8px;
-  font: 12px Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  background: white;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+.qseparator {
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: solid;
+  padding: 3px;
+  margin: 3px;
 }
-.legend ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  clear: both;
+
+#questionnaire {
+  margin: 5px;
 }
-.legend li {
-  display: inline-block;
-  width: 30px;
-  height: 22px;
+
+#submitbutton {
+  margin: 10px;
+  font-size: 40px;
 }
-.legend .min {
-  float: left;
-  padding-bottom: 5px;
-}
-.legend .max {
-  float: right;
+
+#submit {
+  background-color: #2B62BA;
+  color: white;
+  border-radius: 10px;
 }
