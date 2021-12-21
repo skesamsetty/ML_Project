@@ -82,18 +82,12 @@ E - The time elapsed on that question in milliseconds.
 
 ![questions](images/Questions_all.png)
 
----
-## **Visualization**:
----
-
-Tableau
-
-![tableau demographics](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
 
 ---
 ## **Application Design**:
 ---
-![PredictorSays](https://user-images.githubusercontent.com/656837/146631316-01a3eccc-166f-420c-8e44-18dd7089fea2.png)(https://ie-predictor.herokuapp.com/)
+![PredictorSays](https://user-images.githubusercontent.com/656837/146631316-01a3eccc-166f-420c-8e44-18dd7089fea2.png)
+(https://ie-predictor.herokuapp.com/)
 ---
 ### **Machine Learning**:
 ---
@@ -136,9 +130,12 @@ Upon clicking the submit button, Flask and Python unpickle the trained model and
 A results page displays the model's prediction in a Jumbotron element.
 
 ---
-### **Visualizations**:
+## **Visualization**:
 ---
+
 Participant demographic dashboards were produced in Tableau Public.
+
+![tableau demographics](https://github.com/scottdseely/ML_Project/blob/main/images/Participant%20Demographics.png)
 
 ---
 ### **Observations**:
